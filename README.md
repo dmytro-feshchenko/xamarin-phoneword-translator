@@ -2,9 +2,9 @@
 Xamarin cross-platform app which allows to translate phone number from alphanumeric text into a regular numeric phone number and make phone calls.
 
 ## Features:
--[x] Translation from alphanumeric text into a regular numeric phone number
--[ ] UI for translation and making calls
--[ ] Phone calls
+- [x] Translation from alphanumeric text into a regular numeric phone number
+- [x] UI for translation and making calls
+- [ ] Phone calls
 
 ## Resources:
 
