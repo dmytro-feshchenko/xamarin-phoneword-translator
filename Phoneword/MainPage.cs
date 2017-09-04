@@ -9,6 +9,7 @@ namespace Phoneword
         Entry phoneWordText;
         Button translateButton;
         Button callButton;
+        Entry translatedText;
 
         public MainPage()
         {
@@ -43,13 +44,24 @@ namespace Phoneword
                 Text = "Translate"
             });
 
-            panel.Children.Add(callButton = new Button
+            panel.Children.Add(new Label
+            {
+                HorizontalTextAlignment = TextAlignment.Center,
+                Text = "Translated number:"
+            });
+
+            panel.Children.Add(translatedText = new Entry {
+                Text = "No any number translated yet.",
+                IsEnabled = false,
+            });
+
+			panel.Children.Add(callButton = new Button
 			{
-				Text = "Call",
+				Text = "Call is not available now.",
                 IsEnabled = false
 			});
 
-            panel.Children.Add(new Entry {});
+            translateButton.Clicked += this.OnTranslate;
 
             this.Content = panel;
         }
@@ -60,11 +72,17 @@ namespace Phoneword
             string translatedNumber = Core.PhonewordTranslator.ToNumber(enteredNumber);
             if (!String.IsNullOrEmpty(translatedNumber))
             {
-                // todo: Display the number
+                // Display the number and enable call button
+                this.callButton.IsEnabled = true;
+                this.callButton.Text = "Call " + translatedNumber;
+                this.translatedText.Text = translatedNumber;
             }
             else
             {
-                // todo: Validation error
+                // Validation error
+                this.callButton.IsEnabled = false;
+                this.callButton.Text = "Call is not available now.";
+                this.translatedText.Text = "It seems this text is not valid phone number.";
             }
         }
     }
