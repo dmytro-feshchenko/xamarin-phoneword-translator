@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Phoneword
+namespace Core
 {
     public static class PhonewordTranslator
     {
