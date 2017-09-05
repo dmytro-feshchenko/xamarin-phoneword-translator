@@ -15,9 +15,9 @@ Note: In case if you are using Mac OS you can also build iOS version of the app.
 - [x] Phone calls
 
 ## Screenshots:
-![iPhone 7 UI](screenshots/iphone7.png?raw=true)
-![Android UI](screenshots/android.png?raw=true)
-![Make call](screenshots/androidCall.png?raw=true)
+![iPhone 7 UI](screenshots/iphone7.jpg)
+![Android UI](screenshots/android.jpg)
+![Make call](screenshots/androidCall.jpg)
 
 ## Resources:
 
