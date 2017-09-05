@@ -3,9 +3,11 @@ Xamarin cross-platform app which allows to translate phone number from alphanume
 
 ## Getting started:
 Clone this repository: `git clone https://github.com/technoboom/xamarin-phoneword-translator`.
-Open the solution in Visual Studio 2017.
-Build an application.
-In case if you are using Mac OS you can also build iOS version of the app.
+
+Open the solution in Visual Studio 2017. 
+Build an application. 
+
+Note: In case if you are using Mac OS you can also build iOS version of the app.
 
 ## Features:
 - [x] Translation from alphanumeric text into a regular numeric phone number
@@ -13,9 +15,9 @@ In case if you are using Mac OS you can also build iOS version of the app.
 - [x] Phone calls
 
 ## Screenshots:
-![Alt text](screenshots/iphone7.png?raw=true “iPhone 7 UI”)
-![Alt text](screenshots/android.png?raw=true “Android UI”)
-![Alt text](screenshots/androidCall.png?raw=true “Make call”)
+![iPhone 7 UI](screenshots/iphone7.png?raw=true)
+![Android UI](screenshots/android.png?raw=true)
+![Make call](screenshots/androidCall.png?raw=true)
 
 ## Resources:
 
