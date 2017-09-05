@@ -62,6 +62,7 @@ namespace Phoneword
 			});
 
             translateButton.Clicked += this.OnTranslate;
+            callButton.Clicked += this.OnCall;
 
             this.Content = panel;
         }
@@ -84,6 +85,11 @@ namespace Phoneword
                 this.callButton.Text = "Call is not available now.";
                 this.translatedText.Text = "It seems this text is not valid phone number.";
             }
+        }
+
+        private void OnCall(object sender, EventArgs e) {
+            string phoneNumber = this.translatedText.Text;
+            Device.OpenUri(new System.Uri("tel:" + phoneNumber));
         }
     }
 }
